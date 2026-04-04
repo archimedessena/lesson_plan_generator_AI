@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LessonForge - AI-Powered Lesson Plan Generator</title>
+    <link rel="stylesheet" href="{% static 'lesson_AI/css/index.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <h1>LessonForge</h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                   <a href="#" class="btn-secondary">Log In</a>
+                    <a href="#" class="btn-primary">Get Started</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Create Exceptional Lesson Plans in Minutes</h2>
+                <p class="hero-subtitle">AI-powered lesson planning for WASSCE, IGCSE, and A-Level curricula. Save hours and deliver engaging, standards-aligned lessons.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn-primary btn-large">Start Creating Free</a>
+                    <a href="#how-it-works" class="btn-outline btn-large">See How It Works</a>
+                </div>
+                <p class="hero-note">No credit card required · Generate 3 lesson plans free</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Everything You Need to Plan Better Lessons</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Curriculum-Aligned</h3>
+                    <p>Perfectly aligned with WASSCE, Cambridge IGCSE, and A-Level standards for Mathematics and Sciences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Generate comprehensive lesson plans in under 2 minutes. Spend less time planning, more time teaching.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Customizable</h3>
+                    <p>Tailor every lesson to your teaching style, class level, and learning objectives with easy customization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Professional PDFs</h3>
+                    <p>Download beautifully formatted PDF lesson plans ready to print or share with colleagues.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Reusable Templates</h3>
+                    <p>Save your favorite lesson structures and reuse them across different topics and terms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Assessment Ready</h3>
+                    <p>Each lesson includes assessment criteria, learning outcomes, and differentiation strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Simple. Smart. Effective.</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Select Your Curriculum</h3>
+                    <p>Choose from WASSCE, IGCSE Core/Extended, or A-Level Mathematics and Sciences.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Specify Topic & Objectives</h3>
+                    <p>Enter the topic, class level, duration, and key learning outcomes you want to achieve.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Generate & Customize</h3>
+                    <p>AI creates a comprehensive lesson plan. Review, edit, and adjust to fit your needs.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Download & Teach</h3>
+                    <p>Export as PDF and you're ready to deliver an engaging, effective lesson.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Free</h3>
+                    <div class="plan-price">
+                        <span class="price">GH₵0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>3 lesson plans per month</li>
+                        <li>Basic curriculum coverage</li>
+                        <li>PDF export</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Start Free</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="plan-name">Teacher</h3>
+                    <div class="plan-price">
+                        <span class="price">GH₵49</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>50 lesson plans per month</li>
+                        <li>All curricula & subjects</li>
+                        <li>Advanced customization</li>
+                        <li>Reusable templates</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="plan-name">School</h3>
+                    <div class="plan-price">
+                        <span class="price">GH₵299</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Unlimited lesson plans</li>
+                        <li>Up to 10 teachers</li>
+                        <li>Shared template library</li>
+                        <li>Collaboration tools</li>
+                        <li>Dedicated support</li>
+                        <li>Custom branding</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Lesson Planning?</h2>
+            <p>Join hundreds of teachers across Ghana who are saving time and creating better lessons.</p>
+            <a href="#" class="btn-primary btn-large">Start Free Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>LessonForge</h4>
+                    <p>AI-powered lesson planning for educators across Ghana and beyond.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#">Help Center</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="mailto:hello@lessonforge.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LessonForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
