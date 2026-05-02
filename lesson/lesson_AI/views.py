@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import LessonPlan
+from .forms import LessonPlanForm
 
 # Create your views here.
 def index(request):
@@ -8,8 +9,7 @@ def index(request):
 
 def generate_lesson_plan(request):
     if request.method == 'POST':
-        # Here you would handle the form submission and generate the lesson plan
-        # For now, we'll just create a dummy lesson plan
+    
         lesson_plan = LessonPlan.objects.create(
             name_of_teacher="John Doe",
             title="Introduction to AI",
@@ -23,4 +23,8 @@ def generate_lesson_plan(request):
         )
         return render(request, 'lesson_AI/lesson_plan.html', {'lesson_plan': lesson_plan})
     else:
-        return render(request, 'lesson_AI/generate_lesson_plan.html')
+        form = LessonPlanForm()
+        return render(request, 'lesson_AI/generate_lesson_plan.html', {'form': form})
+    
+    
+    

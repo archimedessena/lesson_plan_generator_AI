@@ -8,5 +8,6 @@ app_name = 'lesson_AI'
 urlpatterns = [
     # path(route, view_function, name)
     path('', views.index, name='index'), 
+    path('generate/', views.generate_lesson_plan, name='generate_lesson_plan'),
   
 ]

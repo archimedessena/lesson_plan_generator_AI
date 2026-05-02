@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LessonForge - AI-Powered Lesson Plan Generator</title>
+    <link rel="stylesheet" href="{% static 'lesson_AI/css/index.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <h1>LessonForge</h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                   <a href="#" class="btn-secondary">Log In</a>
+                    <a href="#" class="btn-primary">Get Started</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+   
+        {% block content %}
+
+        {% endblock content %}
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>LessonForge</h4>
+                    <p>AI-powered lesson planning for educators across Ghana and beyond.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#">Help Center</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="mailto:hello@lessonforge.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LessonForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

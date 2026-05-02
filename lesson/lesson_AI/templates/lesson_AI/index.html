@@ -1,4 +1,6 @@
+
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@
 </head>
 <body>
     <!-- Header -->
+      <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="nav">
@@ -25,7 +28,8 @@
             </div>
         </div>
     </header>
-
+   
+    {% block content %}
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -33,7 +37,7 @@
                 <h2 class="hero-title">Create Exceptional Lesson Plans in Minutes</h2>
                 <p class="hero-subtitle">AI-powered lesson planning for WASSCE, IGCSE, and A-Level curricula. Save hours and deliver engaging, standards-aligned lessons.</p>
                 <div class="hero-cta">
-                    <a href="#" class="btn-primary btn-large">Start Creating Free</a>
+                    <a href="{% url 'lesson_AI:generate_lesson_plan' %}" class="btn-primary btn-large">Start Creating Free</a>
                     <a href="#how-it-works" class="btn-outline btn-large">See How It Works</a>
                 </div>
                 <p class="hero-note">No credit card required · Generate 3 lesson plans free</p>
@@ -172,7 +176,7 @@
             <a href="#" class="btn-primary btn-large">Start Free Today</a>
         </div>
     </section>
-
+    {% endblock content %}
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
